@@ -27,7 +27,7 @@ ssh root@${IP} "\
 	sed -i 's/^MaxUser=.*$/MaxUser=800/' sc_serv.conf ;\
 	sed -i 's/^Password=.*$/Password=${BDPW}/' sc_serv.conf ;\
 	sed -i 's/^PortBase=.*$/PortBase=8300/' sc_serv.conf ;\
-	sed -i 's/^AutoDumpSourceTime=.*$/AutoDumpSourceTime=0/' sc_serv.conf ;\
+	sed -i 's/^AutoDumpSourceTime=.*$/AutoDumpSourceTime=600/' sc_serv.conf ;\
 	\
 	mv -v ~/nginx/root /usr/share/nginx/ ;\
 	ln -vfs /usr/share/nginx/root ~/nginx/root ;\
